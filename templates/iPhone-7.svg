@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="750" height="1334" viewBox="0 0 750 1334"
+ preserveAspectRatio="xMidYMid meet">
+
+<defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" style="stop-color:rgb(0,0,0); stop-opacity:0" />
+        <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0.6" />
+    </radialGradient>
+
+    <image id="tile" href="../outputs/tile-purple-gold.png" height="400" width="400" />
+</defs>
+
+ <use href="#tile" x="-25" y="0" />
+ <use href="#tile" x="-25" y="400" />
+ <use href="#tile" x="-25" y="800" />
+ <use href="#tile" x="-25" y="1200" />
+ 
+ <use href="#tile" x="375" y="0" />
+ <use href="#tile" x="375" y="400" />
+ <use href="#tile" x="375" y="800" />
+ <use href="#tile" x="375" y="1200" />
+
+ <_rect x="-292" y="-300" width="1334" height="1334" fill="url(#grad)" />
+ <_rect x="0" y="1034" width="750" height="1334" fill="rgba(0,0,0,0.6)" />
+
+ <rect x="-292" y="0" width="1334" height="1334" fill="url(#grad)" />
+ <_rect x="0" y="1034" width="750" height="1334" fill="rgba(0,0,0,0.6)" />
+  
+ <rect x="21" y="446" width="708" height="465.5" fill="gold" />
+ <image x="25" y="450" href="../resources/photo-1.png" height="457.5" width="700" />
+
+ </svg>

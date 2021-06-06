@@ -1,0 +1,6 @@
+black,dimgrey
+darkred,goldenrod
+lightgoldenrodyellow,goldenrod
+purple,gold
+royalblue,skyblue
+teal,turquoise
