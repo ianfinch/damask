@@ -33,12 +33,23 @@ tiles:
 	$(call generate_pngs,$$template,outputs/tile,$$templateBg,$$templateFg)
 
 .PHONY: backgrounds
-backgrounds:
+backgrounds: computer_backgrounds iPhone_15_backgrounds
+
+.PHONY: computer_backgrounds
+computer_backgrounds:
 	template="templates/background.svg" ; \
 	templateBg=$$(grep 'tile-' $$template | cut -d'"' -f4 | cut -d'-' -f2) ; \
 	templateFg=$$(grep 'tile-' $$template | cut -d'"' -f4 | cut -d'.' -f1 | cut -d'-' -f3) ; \
 	svg2png="docker run --rm -v $$PWD:/home/appuser --user $$UID guzo/svg2png cairosvg" ; \
 	$(call generate_pngs,$$template,outputs/background,$$templateBg,$$templateFg)
+
+.PHONY: iPhone_15_backgrounds
+iPhone_15_backgrounds:
+	template="templates/iPhone-15.svg" ; \
+	templateBg=$$(grep 'tile-' $$template | cut -d'"' -f4 | cut -d'-' -f2) ; \
+	templateFg=$$(grep 'tile-' $$template | cut -d'"' -f4 | cut -d'.' -f1 | cut -d'-' -f3) ; \
+	svg2png="docker run --rm -v $$PWD:/home/appuser --user $$UID guzo/svg2png cairosvg" ; \
+	$(call generate_pngs,$$template,outputs/iPhone15,$$templateBg,$$templateFg)
 
 .PHONY: clean
 clean:
