@@ -55,8 +55,8 @@
  <rect x="768" y="2456" width="210" height="60" fill="royalblue" transform="translate(25 -25) rotate(-45 768 2456)" />
  <text x="802" y="2472" textLength="190" class="legend" transform="translate(25, -25) rotate(-45 802 2472)">github.com/ianfinch</text>
 
- <rect x="0" y="0" width="1179" height="400" fill="rgba(0,0,0,0.8)" />
- <rect x="-288" y="400" width="1756" height="1756" fill="url(#grad)" />
- <rect x="0" y="2156" width="1179" height="400" fill="rgba(0,0,0,0.8)" />
+ <rect x="0" y="0" width="1179" height="200" fill="rgba(0,0,0,0.8)" />
+ <rect x="-488" y="200" width="2156" height="2156" fill="url(#grad)" />
+ <rect x="0" y="2356" width="1179" height="200" fill="rgba(0,0,0,0.8)" />
  
 </svg>
